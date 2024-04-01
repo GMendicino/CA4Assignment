@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+  
+ body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000000, #f8f9fa);
+  color: #fff;
+  }
+
+    .navbar {
+  background-color: #007bff;
+  padding: 15px 20px;
+  border-bottom: 20px solid #0056b3;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;  
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ccc;
+}
+
+.logo {
+  width: 80px;
+  height: auto; 
+  margin: 10px; 
+  }
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+#contact-me, #things-i-love {
+  background-color: #f8f9fa;
+  color: #000;
+  }
+
+ .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 30px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  
+.portfolio-heading {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .portfolio-subheading {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Gianmarco Mendicino</a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="https://rajajunior-moralannual-5000.codio-box.uk/">Chat</a></li>
+      <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>    
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <section id="personal-info">
+    <h2>About Me</h2>
+    <p>I am a University of Aberdeen student enrolled in a Computing course. As such, I am very passionate about computers and technology as a whole. I have a lot of experience in programming languages, most notably Python and JavaScript.</p>
+  </section>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div id="contact-me" class="section">
+        <h3>Contact Me</h3>
+        <form>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="things-i-love" class="section">
+        <h3>Things I Love</h3>
+        <div class="d-flex justify-content-around">
+          <img src="Images/pythonlogo.jpg" alt="Python Logo" class="logo">
+          <img src="Images/jslogo.jpg" alt="JavaScript Logo" class="logo">
+          <img src="Images/htmllogo.jpg" alt="HTML Logo" class="logo">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

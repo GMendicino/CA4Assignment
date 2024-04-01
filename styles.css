@@ -1,8 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa; 
-  color: #333; 
-}
+@import url(''https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 
 .container {
   max-width: 960px; 
@@ -13,26 +9,6 @@ body {
 header {
   text-align: center; 
   margin-bottom: 20px; 
-}
-
-nav ul {
-  list-style-type: none; 
-  margin: 0; 
-  padding: 0; 
-}
-
-.nav-item {
-  display: inline-block; 
-  margin-right: 10px; 
-}
-
-.nav-link {
-  text-decoration: none; 
-  color: #007bff; 
-}
-
-.nav-link:hover {
-  text-decoration: underline; 
 }
 
 #chat {
@@ -72,6 +48,20 @@ nav ul {
   background-color: #0056b3; 
 }
 
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
 #portfolio {
   background-color: #fff; 
   padding: 20px; 
@@ -79,13 +69,42 @@ nav ul {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-#portfolio h2 {
-  color: #007bff; 
-  margin-bottom: 
+.portfolio-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
 }
 
-#personal-info,
-#professional-info {
+.portfolio-subheading {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#portfolio h2 {
+  color: #007bff; 
+  margin-bottom: 20px;
+}
+
+.portfolio-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio-image {
+    border-radius: 50%;
+    max-width: 300px !important;
+    height: auto;
+  }
+
+  .portfolio-info {
+    max-width: 50%;
+    margin-right: 20px;
+    animation: slideInUp 1s ease; 
+  }
+
+#personal-info, #professional-info {
   background-color: #fff; 
   padding: 20px; 
   border-radius: 5px; 
@@ -93,7 +112,44 @@ nav ul {
   margin-bottom: 20px; 
 }
 
-#personal-info h2,
-#professional-info h2 {
+#personal-info h2, #professional-info h2 {
   color: #007bff; 
   margin-bottom:20px; 
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 15px 20px;
+  border-bottom: 20px solid #0056b3;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;  
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ccc;
+}
+
+
+  
