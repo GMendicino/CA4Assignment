@@ -36,5 +36,22 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>
+    <script>
+      const socket = io();
+
+socket.emit('join', 'Username');
+
+socket.on('userLeft', () => {
+  console.log('User left');
+});
+
+socket.on('userJoined', (username) => {
+  console.log('User joined:', username);
+});
+
+socket.on('userTyping', (username) => {
+  console.log(username, 'is typing');
+});
+</script>
   </body>
 </html>
